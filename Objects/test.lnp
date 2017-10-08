@@ -1,0 +1,21 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\stm32f0xx_it.o"
+".\objects\system_stm32f0xx.o"
+".\objects\bsp.o"
+".\objects\i2c_libary.o"
+".\objects\stm32f0xx_gpio.o"
+".\objects\stm32f0xx_rcc.o"
+".\objects\stm32f0xx_dma.o"
+".\objects\stm32f0xx_i2c.o"
+".\objects\stm32f0xx_spi.o"
+".\objects\stm32f0xx_tim.o"
+".\objects\startup_stm32f0xx.o"
+".\objects\5110.o"
+".\objects\mse5611.o"
+".\objects\mahonyahrs.o"
+".\objects\mpu9250.o"
+--library_type=microlib --strict --scatter ".\Objects\test.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\test.map" -o .\Objects\test.axf
